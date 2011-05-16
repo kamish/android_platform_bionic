@@ -209,6 +209,11 @@ int              poll (struct pollfd *, unsigned int, long);
 int              eventfd (unsigned int, int);
 int              __set_tls (void*);
 int              cacheflush (long start, long end, long flags);
+int              stime (time_t *);
+int              swapon (const char *, int);
+int              swapoff (const char *);
+pid_t            getsid (pid_t pid);
+int              adjtimex (struct timex *);
 #ifdef __cplusplus
 }
 #endif
